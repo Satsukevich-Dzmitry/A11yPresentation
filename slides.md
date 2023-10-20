@@ -261,9 +261,10 @@ transition: slide-up
 level: 2
 ---
 
-# Oops
+# Most common problems
+<br/>
 
-Law suits on accessibility
+<img src="/most-common-problems.png" class="m-auto"/>
 
 ---
 layout: image-right
