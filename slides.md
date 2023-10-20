@@ -58,11 +58,7 @@ clicks: 5
   <div>
     <span v-if="$clicks >= 1 && $clicks < 4" class="bubble bubble-bottom-left">What do you know about A11y?</span>
     <span v-if="$clicks === 5" class="bubble bubble-bottom-left">Oh no</span>
-    <span v-if="$clicks === 5" class="water-drop water-drop-2">💧
-    		<audio autoplay>
-  			  <source src="/fail-sound.mp3" type="audio/mp3">
-		    </audio>
-    </span>
+    <span v-if="$clicks === 5" class="water-drop water-drop-2">💧</span>
     <img src="/boss.webp" class="h-60 rounded shadow"/>
   </div>
 </section>
@@ -161,15 +157,104 @@ clicks: 5
 
 ---
 layout: default
+transition: fade
 ---
 
-# Table of contents
+# Some statistics
 
-```html
-<Toc minDepth="1" maxDepth="1"></Toc>
+<img src="statistics.jpeg" class="mt-20 ml-55"/>
+
+---
+layout: default
+transition: fade
+---
+
+# Some statistics
+
+<br/>
+<br/>
+
+```mermaid 
+pie title Peoples with disabilities
+    "1" : 15
+    "2" : 85
 ```
 
-<Toc maxDepth="1"></Toc>
+<style scoped>
+  .mermaid {
+    transform: scale(1.7);
+    margin-top: 2rem;
+  }
+</style>
+
+---
+layout: default
+transition: fade
+---
+
+# Some statistics
+
+<br/>
+<br/>
+
+```mermaid 
+pie title Peoples with disabilities by internet access(USA)
+    "Has access" : 60
+    "No access" : 40
+```
+
+<style scoped>
+  .mermaid {
+    transform: scale(1.7);
+    margin-top: 2rem;
+  }
+</style>
+
+---
+layout: default
+transition: fade
+---
+
+# Some statistics
+
+<br/>
+<br/>
+
+```mermaid 
+pie title Peoples with disabilities by web usage
+    "Never" : 23
+    "Visit" : 77
+```
+
+<style scoped>
+  .mermaid {
+    transform: scale(1.7);
+    margin-top: 2rem;
+  }
+</style>
+
+---
+layout: default
+transition: fade
+---
+
+# Some statistics
+
+<br/>
+<br/>
+
+```mermaid 
+pie title Websites for people who rely on assistive technology
+    "Accessible": 10
+    "Inacsessible": 90
+```
+
+<style scoped>
+  .mermaid {
+    transform: scale(1.7);
+    margin-top: 2rem;
+  }
+</style>
 
 ---
 transition: slide-up
